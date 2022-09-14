@@ -1,0 +1,45 @@
+.top{text-align: right;
+    text-decoration: none;
+    color: black;}
+    .logo{display: flex;
+    justify-content: center;}
+    .logo img{border-radius: 60px;}
+    body{background-image: url(../kitcheningFlexbox_Base/images/bg-body.png);
+    padding: 0px 105px;}
+    
+    .itemlista{width: 120px;
+        height: 24px;
+        text-align: center;
+        background: gray;
+        padding: 10px;
+        text-decoration: none;
+        list-style-type: none;
+    
+    }
+    .navlink{text-decoration: none;
+         color: white;
+        height: 25px;
+    width: 10px;}
+    
+    ul{width: 940px;
+        display: flex;
+        padding: 0;
+        justify-content: space-between;
+       
+       
+    }
+    nav{width: 940px;}
+    
+    .lugares{list-style-type: none;}
+    
+    .vermas{text-decoration: none;
+    background: gray;
+    color: white;}
+    
+    .footer{list-style-type: none;
+    background: rgb(182, 40, 40);
+    width: 940px;
+    height: 50px;
+    text-align: center;
+    border-radius: 20px;
+    justify-content: center;}
