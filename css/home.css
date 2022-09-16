@@ -1,61 +1,196 @@
-.top{text-align: right;
+.top {
+    text-align: right;
     text-decoration: none;
-    color: black;}
+    color: black;
+}
 
-    
-.itemlista{width: 120px;
-    height: 24px;
+
+.itemlista {
+    width: 120px;
+    height: 15px;
     text-align: center;
-    background: rgb(17, 75, 125);
+    background: rgb(40, 40, 40);
     padding: 10px;
     text-decoration: none;
     list-style-type: none;
-    align-items: center;}
-.navlink{text-decoration: none;
+    align-items: center;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.navlink {
+    text-decoration: none;
     color: white;
     height: 25px;
-    width: 10px;}
+    width: 10px;
+
+}
+
+ul {
     
-ul{width: 940px;
     display: flex;
     padding: 0;
     justify-content: space-between;
-    }
-nav{width: 940px;}
-    
-.lugares{list-style-type: none;}
-    
-.vermas{text-decoration: none;
+}
+
+nav {
+    width: 940px;
+}
+
+.lugares {
+    list-style-type: none;
+}
+
+.vermas {
+    text-decoration: none;
     background: gray;
-    color: white;}
-    
-.footer{list-style-type: none;
+    color: white;
+}
+
+.footer {
+    list-style-type: none;
     background: rgb(182, 40, 40);
     width: 940px;
     height: 50px;
     text-align: center;
     border-radius: 20px;
-    justify-content: center;}
+    justify-content: center;
+}
 
-.imagenes{width: 940px;
+.imagenes {
+    width: 940px;
     display: flex;
-    padding: 0;}
-.cajahija{align-items: baseline;
+    padding: 0;
+}
+
+.cajahija {
+    align-items: baseline;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(17, 75, 125);
+    background-color: black;
     height: 400px;
     margin: 10px;
     padding: 20px;
     border-radius: 30px;
-    }
-
-.listaimagenes{list-style: none;}
-.cajapadre{text-align: center;
-color: white;}
-.listapadre{display: flex;
+    width: 200px;
 }
-body{background-color: black;}
-.letter{color: white;}
 
-    
+.listaimagenes {
+    list-style: none;
+}
+
+.cajapadre {
+    text-align: center;
+    color: white;
+}
+
+.listapadre {
+    display: flex;
+}
+
+body {background-color: rgb(33, 33, 33);
+    margin: 0;
+}
+
+.letter {
+    color: white;
+    text-decoration: none;
+}
+
+.footer {
+    list-style-type: none;
+    background: rgb(17, 75, 125);
+    width: 940px;
+    height: 50px;
+    text-align: center;
+    border-radius: 20px;
+    justify-content: center;
+    color: white;
+}
+
+.abajopadre {
+    display: flex;
+    background: rgb(17, 75, 125);
+    height: 65px;
+    width: 1180px;
+    border-start-start-radius: 30px;
+    border-start-end-radius: 30px;
+    justify-content: center;
+    margin: auto;
+}
+
+.abajohijos {
+    list-style-type: none;
+    line-height: 60px;
+}
+
+.letras {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.centrar1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.centrar2{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.logo{
+height: 60%;
+width: 60%;
+margin-left: 30px;
+ }
+header{background-image:url(../Img/Background\ \(1\)\ \(1\).png);
+       margin: 0%;
+       width: 100%;
+       height: 90px;
+       
+}
+.arriba{display: flex;
+    margin: 0%;
+    justify-content: space-between;
+}
+@media (max-width:390px){
+    .centrar2 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;}
+    .centrar1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;}
+    header {
+        background-image: url(../Img/Background\ \(1\)\ \(1\).png);
+        margin: 0%;
+        width: 100%;
+        height: 640px;}
+    .arriba {
+        justify-content: center;
+        display: flex;
+        margin: 0%;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 500px;
+        align-items: center;
+        }
+    .letter{color: white;
+        text-decoration: none;
+        font-size: x-large;}
+    .logo{height: 70%;
+        width: 70%;
+        margin-left: 30px;}
+    }
