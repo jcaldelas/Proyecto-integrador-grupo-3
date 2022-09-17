@@ -160,6 +160,184 @@ header{background-image:url(../Img/Background\ \(1\)\ \(1\).png);
     margin: 0%;
     justify-content: space-between;
 }
+
+/* CSS DE GENEROS */
+
+
+.top {
+    text-align: right;
+    text-decoration: none;
+    color: black;
+}
+
+
+.itemlista-generos{
+    width: 120px;
+    height: 15px;
+    text-align: center;
+    background: rgb(40, 40, 40);
+    padding: 10px;
+    text-decoration: none;
+    list-style-type: none;
+    align-items: center;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.navlink-generos {
+    text-decoration: none;
+    color: white;
+    height: 25px;
+    width: 10px;
+
+}
+
+ul {
+    
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+}
+
+nav {
+    width: 940px;
+}
+
+.lugares-generos {
+    list-style-type: none;
+}
+
+.vermas-generos {
+    text-decoration: none;
+    background: gray;
+    color: white;
+}
+
+.footer-generos {
+    list-style-type: none;
+    background: rgb(182, 40, 40);
+    width: 940px;
+    height: 50px;
+    text-align: center;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.imagenes-generos {
+    width: 940px;
+    display: flex;
+    padding: 0;
+}
+
+.cajahija-generos {
+    align-items: baseline;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 400px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 30px;
+    width: 200px;
+}
+
+.listaimagenes-generos {
+    list-style: none;
+}
+
+.cajapadre-generos {
+    text-align: center;
+    color: white;
+}
+
+.listapadre-generos {
+    display: flex;
+}
+
+body {background-color: rgb(33, 33, 33);
+    margin: 0;
+}
+
+.letter-generos {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-generos {
+    list-style-type: none;
+    background: rgb(17, 75, 125);
+    width: 940px;
+    height: 50px;
+    text-align: center;
+    border-radius: 20px;
+    justify-content: center;
+    color: white;
+}
+
+.abajopadre-generos {
+    display: flex;
+    background: rgb(17, 75, 125);
+    height: 65px;
+    width: 1180px;
+    border-start-start-radius: 30px;
+    border-start-end-radius: 30px;
+    justify-content: center;
+    margin: auto;
+}
+
+.abajohijos-generos {
+    list-style-type: none;
+    line-height: 60px;
+}
+
+.letras-generos {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.centrar1-generos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.centrar2-generos{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.logo-generos{
+height: 60%;
+width: 60%;
+margin-left: 30px;
+ }
+header{background-image:url(../Img/Background\ \(1\)\ \(1\).png);
+       margin: 0%;
+       width: 100%;
+       height: 90px;
+       
+}
+.arriba-generos{display: flex;
+    margin: 0%;
+    justify-content: space-between;
+}
+
+.tamaño-imagenes-generos {
+width: 184px;
+height: 273px;
+
+
+
+}
+
+
+
+
 @media (max-width:390px){
     .centrar2 {
         display: flex;
