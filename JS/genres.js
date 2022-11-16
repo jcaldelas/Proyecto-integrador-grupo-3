@@ -9,13 +9,12 @@ fetch(urlUser)
 .then(function(data) {
     
     let result = data.genres;
-    console.log(result)
     let characters = "";
 
     for (let i = 0; i < 5; i++) {
         characters += `<article class="cajahija-generos">
                         <a href="../EROS/detail-genres.html?id=${result[i].id}" class="letter">
-                        <img class="tamaño-imagenes-generos"src="../Img/fotosgenres/genrespeliculas/Drama.jpg" alt="">
+                        <img class = "imagen"class="tamaño-imagenes-generos"src="../Img/fotosgenres/genrespeliculas/Drama.jpg" alt="">
                         <h3 class="letter">${result[i].name}</h3>
                         </a></article>`
     }
@@ -44,7 +43,7 @@ fetch(urlUser)
     for (let i = 5; i < 10; i++) {
         contenido += ` <article class="cajahija-generos">
                          <a href="../EROS/detail-genres.html?id=${result[i].id}" class="letter">
-                         <img class="tamaño-imagenes-generos" src="../Img/fotosgenres/seriesgenres/dramapolitico.jpg" alt="">
+                         <img class="imagen"  src="../Img/fotosgenres/seriesgenres/dramapolitico.jpg" alt="">
                          <h3 class="letter">${result[i].name}</h3>
                          </a></article>`
     }

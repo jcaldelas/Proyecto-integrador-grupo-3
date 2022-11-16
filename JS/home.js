@@ -100,7 +100,7 @@ fetch(urlUserairing_today)
     let content = "";
 
     for (let i = 0; i < 5; i++) {
-        content += ` <article class="cajahija"><a href="./JERO/detail-movie.html?id=${result[i].id}" class="letter">
+        content += ` <article class="cajahija"><a href="./JOACO/detail-serie.html?id=${result[i].id}" class="letter">
                       <img class= "imagen" src="https://image.tmdb.org/t/p/w500/${result[i].backdrop_path}" alt="">
                       <h3 class="titulo_pelicula">${result[i].name}</h3>
                       <p class="fecha">${result[i].first_air_date}</p>
@@ -127,7 +127,7 @@ fetch(urlUserpopulartv)
     let content = "";
 
     for (let i = 0; i < 5; i++) {
-        content += ` <article class="cajahija"><a href="./JERO/detail-movie.html?id=${result[i].id}" class="letter">
+        content += ` <article class="cajahija"><a href="./JOACO/detail-serie.html?id=${result[i].id}" class="letter">
                       <img class= "imagen" src="https://image.tmdb.org/t/p/w500/${result[i].backdrop_path}" alt="">
                       <h3 class="titulo_pelicula">${result[i].name}</h3>
                       <p class="fecha">${result[i].first_air_date}</p>
@@ -155,7 +155,7 @@ fetch(urlUsertopratedtv)
     let content = "";
 
     for (let i = 0; i < 5; i++) {
-        content += `<article class="cajahija"><a href="./JERO/detail-movie.html?id=${result[i].id}" class="letter">
+        content += `<article class="cajahija"><a href="./JOACO/detail-serie.html?id=${result[i].id}" class="letter">
                      <img class= "imagen" src="https://image.tmdb.org/t/p/w500/${result[i].backdrop_path}" alt="">
                      <h3 class="titulo_pelicula">${result[i].name}</h3>
                      <p class="fecha">${result[i].first_air_date}</p>
@@ -163,9 +163,7 @@ fetch(urlUsertopratedtv)
     }
 
     sectiontopratedtv.innerHTML = content;
-
-
-  
+    
     return data;
 })
 .catch(function(error) {

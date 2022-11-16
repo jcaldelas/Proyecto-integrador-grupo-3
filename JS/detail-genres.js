@@ -47,9 +47,9 @@ fetch(urlUser)
    
 
     for (let i = 5; i < 10; i++) {
-        characters += `<article class="cajahija-generos">
+        characters += `<article class="cajahija-detailgeneros">
                         <a href="../JERO/detail-movie.html?id=${result[i].id}" class="letter">
-                        <img class="tamaño-imagenes-generos" src="https://image.tmdb.org/t/p/w500/${result[i].backdrop_path}" alt="">
+                        <img class = "imagen" class="tamaño-imagenes-generos" src="https://image.tmdb.org/t/p/w500/${result[i].backdrop_path}" alt="">
                         <h3 class="letter">${result[i].title}</h3>
                         <p class="fecha">${result[i].release_date}</p>
                         </a></article>`
