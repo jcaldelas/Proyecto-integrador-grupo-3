@@ -46,7 +46,7 @@ fetch(urlUserpopular)
     let characters = "";
 
     for (let i = 0; i < 5; i++) {
-        characters += `<article class="cajahija"><a href="./JOACO/detail-serie.html?id=${result[i].id}" class="letter">
+        characters += `<article class="cajahija"><a href="./JERO/detail-movie.html?id=${result[i].id}" class="letter">
                         <img class="imagen" src="https://image.tmdb.org/t/p/w500/${result[i].backdrop_path}" alt="">
                         <h3 class="titulo_pelicula">${result[i].title}</h3>
                         <p class="fecha">${result[i].release_date}</p>
