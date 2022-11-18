@@ -13,8 +13,7 @@ fetch(urlUser)
 
     for (let i = 0; i < 5; i++) {
         characters += `<article class="cajahija-generos">
-                        <a href="../EROS/detail-genres.html?id=${result[i].id}" class="letter">
-                        <img class = "imagen"class="tamaño-imagenes-generos"src="../Img/fotosgenres/genrespeliculas/Drama.jpg" alt="">
+                        <a href="../EROS/detail-genres.html?id=${result[i].id}&type=pelicula" class="letter">
                         <h3 class="letter">${result[i].name}</h3>
                         </a></article>`
     }
@@ -42,8 +41,7 @@ fetch(urlUser)
 
     for (let i = 5; i < 10; i++) {
         contenido += ` <article class="cajahija-generos">
-                         <a href="../EROS/detail-genres.html?id=${result[i].id}" class="letter">
-                         <img class="imagen"  src="../Img/fotosgenres/seriesgenres/dramapolitico.jpg" alt="">
+                         <a href="../EROS/detail-genres.html?id=${result[i].id}&type=serie" class="letter">
                          <h3 class="letter">${result[i].name}</h3>
                          </a></article>`
     }

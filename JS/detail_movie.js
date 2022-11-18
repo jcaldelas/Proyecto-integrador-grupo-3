@@ -13,6 +13,8 @@ let estreno = document.querySelector('#estreno')
 let duracion = document.querySelector('#duracion')
 let sinopsis = document.querySelector('#sinopsis')
 let generos = document.querySelector('#generos')
+let ul = document.querySelector('#ul')
+let link_genero = document.querySelector('.link_genero')
 
 fetch(urlUserdetallepelis)
 .then(function(response) {
@@ -32,11 +34,11 @@ fetch(urlUserdetallepelis)
     sinopsis.innerText = `OVERVIEW: ${data.overview}`;
 
     let contenido = "";
-    for (let i = 0; i < 1; i++) {
-        contenido += ` ${result[i].name}  /`
+    for (let i = 0; i < result.length; i++) {
+        
+        contenido += `<li class="li"><a  href="">${result[i].name}</a></li>`
     }
-   generos.innerText = `GENRES: ${contenido}`
-
+    ul.innerHTML=contenido
   
     return data;
 })

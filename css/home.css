@@ -152,6 +152,19 @@ body {background-color: rgb(33, 33, 33);
     align-items: center;
     text-align: center;
 }
+.centrar1_search{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.centrar2_searchresults{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
 
 .centrar2{
     display: flex;
@@ -286,6 +299,14 @@ nav {
     display: flex;
     padding: 0;
 }
+.li{
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+#ul{
+    list-style: none;
+    justify-content: space-evenly}
 .cajahija_detallepelis{
     align-items: baseline;
     justify-content: space-between;
@@ -301,7 +322,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    height: 360px;
+    height: 70px;
     margin: 10px;
     padding: 20px;
     border-radius: 30px;
