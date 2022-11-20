@@ -13,7 +13,7 @@ fetch(urlUser)
 
     for (let i = 0; i < 5; i++) {
         characters += `<article class="cajahija-generos">
-                        <a href="../EROS/detail-genres.html?id=${result[i].id}&type=pelicula" class="letter">
+                        <a href="./detail-genres.html?id=${result[i].id}&type=pelicula&genre=${result[i].name}" class="letter">
                         <h3 class="letter">${result[i].name}</h3>
                         </a></article>`
     }
@@ -41,7 +41,7 @@ fetch(urlUser)
 
     for (let i = 5; i < 10; i++) {
         contenido += ` <article class="cajahija-generos">
-                         <a href="../EROS/detail-genres.html?id=${result[i].id}&type=serie" class="letter">
+                         <a href="./detail-genres.html?id=${result[i].id}&type=serie&genre=${result[i].name}" class="letter">
                          <h3 class="letter">${result[i].name}</h3>
                          </a></article>`
     }

@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/home.css">
+    <title>Document</title> <link rel="stylesheet" href="./css/home.css">
 </head>
-
 <body>
     <header>
         
@@ -20,33 +17,32 @@
             <li class="itemlista"><a href="./detail-serie.html" class="navlink">SERIES</a></li>
             <li class="itemlista"><a href="./favourite.html" class="navlink">FAVORITOS</a></li>
             <li class="barra"><form action="./search-results.html"><input type="peliculas" placeholder="Escribe aqui" name="buscador" class="buscador"><button type="submit">Buscar</button></form></li>
+          
         </ul>
     </header>
-
-<main class="centrar1">
-    <h1 class="letter">UPCOMING MOVIES</h1>
-    <section class="centrar2upcoming" ></section>
-</main>
-<main class="centrar1">
-    <h1 class="letter">POPULAR MOVIES</h1>
-    <section class="centrar2_popularmovie"></section>
-</main>
-<main class="centrar1">
-    <h1 class="letter">TOP RATED MOVIES</h1>
-    <section class="centrar2_toprated"></section>
-</main>
-<main class="centrar1">
-    <h1 class="letter">AIRING TV TODAY</h1>
-    <section class="centrar2_airing_today"></section>
-</main>
-<main class="centrar1">
-    <h1 class="letter">POPULAR TV</h1>
-    <section class="centrar2_populartv"></section>
-</main>
-<main class="centrar1">
-    <h1 class="letter">TOP RATED TV</h1>
-    <section class="centrar2_topratedtv"></section>
-</main>
+    <h1 class="letter" id="titulo3" class="centrar1"></h1>
+    <main class="centrar2upcoming" id='centrar1Sin' class="centrar1">
+        <section class="detallepelis" >
+            <article class="cajahija_detallepelis"><img class="imagen" id="cartelera"
+                src="" alt=""/>
+            <h2 class="letter" id="titulo1"></h2>
+            </a></article>
+            <article class="cajahijapelis">
+            <h2 class="letter" id="titulo2"></h2>
+            <p class="letter" id="calificacion"></p>
+            <p class="letter" id="estreno"></p>
+            <p class="letter" id="duracion"></p>
+            <p class="letter" id="sinopsis"></p>
+            <br>
+            <p class="letter" id="generos"></a></p> <a class="link_genero" href=""></a>
+            <ul class="letter" id="ul" class="li"></ul>
+            <br>
+            <br>
+            <p  class="letter"><button type="submit" id="clickfav">AGREGAR A FAVORITOS</button></p>
+            <p  class="letter"><button type="submit" >VER RECOMENDACIONES</button></p>
+            
+            </article></section>
+    </main>
 
     <footer class="footer">
         <ul class="abajopadre">
@@ -55,8 +51,12 @@
         </ul>
         <li class="abajohijos"><img class="logomp" src="./Img/logoTM.png"></li>
     </footer>
-    <script type="text/javascript" src="./JS/home.js"></script>
     <script src="./JS/validar.js"></script>
+    <script type="text/javascript" src="./JS/detail_movie.js"></script>
 </body>
-
 </html>
+
+
+
+
+

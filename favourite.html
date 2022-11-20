@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/home.css">
+    <title>Document</title> <link rel="stylesheet" href="./css/home.css">
 </head>
-
 <body>
     <header>
         
@@ -20,33 +17,14 @@
             <li class="itemlista"><a href="./detail-serie.html" class="navlink">SERIES</a></li>
             <li class="itemlista"><a href="./favourite.html" class="navlink">FAVORITOS</a></li>
             <li class="barra"><form action="./search-results.html"><input type="peliculas" placeholder="Escribe aqui" name="buscador" class="buscador"><button type="submit">Buscar</button></form></li>
+          
         </ul>
     </header>
+    <h1 class="letter" >TUS PELÍCULAS FAVORITAS</h1>
 
-<main class="centrar1">
-    <h1 class="letter">UPCOMING MOVIES</h1>
-    <section class="centrar2upcoming" ></section>
-</main>
-<main class="centrar1">
-    <h1 class="letter">POPULAR MOVIES</h1>
-    <section class="centrar2_popularmovie"></section>
-</main>
-<main class="centrar1">
-    <h1 class="letter">TOP RATED MOVIES</h1>
-    <section class="centrar2_toprated"></section>
-</main>
-<main class="centrar1">
-    <h1 class="letter">AIRING TV TODAY</h1>
-    <section class="centrar2_airing_today"></section>
-</main>
-<main class="centrar1">
-    <h1 class="letter">POPULAR TV</h1>
-    <section class="centrar2_populartv"></section>
-</main>
-<main class="centrar1">
-    <h1 class="letter">TOP RATED TV</h1>
-    <section class="centrar2_topratedtv"></section>
-</main>
+    <main id="peliculas_fav" class="centrar2"></main>
+    <h1 class="letter" >TUS SERIES FAVORITAS</h1>
+    <main id="series_fav" class="centrar2"></main>
 
     <footer class="footer">
         <ul class="abajopadre">
@@ -55,8 +33,7 @@
         </ul>
         <li class="abajohijos"><img class="logomp" src="./Img/logoTM.png"></li>
     </footer>
-    <script type="text/javascript" src="./JS/home.js"></script>
     <script src="./JS/validar.js"></script>
-</body>
-
-</html>
+    <script type="text/javascript" src="./JS/favourite.js"></script>
+    </body>
+</html>   
