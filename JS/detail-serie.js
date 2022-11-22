@@ -4,7 +4,9 @@ let idserie = qsobj.get('id')
 let type = qsobj.get('type')
 let urlUserairing_today = 'https://api.themoviedb.org/3/tv/airing_today?api_key=cf7707fd77a1290e2423ba7e39e253a8&language=en-US&page=1'
 let urlUserdetalleserie = `https://api.themoviedb.org/3/tv/${idserie}?api_key=cf7707fd77a1290e2423ba7e39e253a8&language=en-US`
+let urlverseries = `https://api.themoviedb.org/3/tv/${idserie}/recommendations?api_key=cf7707fd77a1290e2423ba7e39e253a8&language=en-US&page=1`
 let favorito = document.querySelector('#clickfav')
+let recomendaciones = document.querySelector('#ver_recomendaciones')
 let maindetailmovie = document.querySelector('#centrar1Sin')
 let titulo_h3 = document.querySelector('#titulo1')
 let titulo_h32 = document.querySelector('#titulo2')
@@ -17,6 +19,8 @@ let sinopsis = document.querySelector('#overview')
 let generos = document.querySelector('#generos')
 let temporadas = document.querySelector('#temporadas')
 let main_series = document.querySelector('#main_series')
+let ulrecomendaciones = document.querySelector('#ulrecomendaciones')
+
 if (type == null || idserie == null) {
     
     fetch(urlUserairing_today)
@@ -68,7 +72,7 @@ fetch(urlUserdetalleserie)
     let contenido = "";
         for (let i = 0; i < result.length; i++) {
             
-            contenido += `<li class="li"><a  href="./detail-genres.html?id=${result[i].id}&genre=${result[i].name}">${result[i].name}</a></li>`
+            contenido += `<li class="li"><a  href="./detail-genres.html?id=${result[i].id}&genre=${result[i].name}&type=${type}">${result[i].name}</a></li>`
         }
         ul.innerHTML=contenido
     return data;
@@ -76,6 +80,7 @@ fetch(urlUserdetalleserie)
 .catch(function(error) {
     return error;
 });
+
 /*Agregar, quitar de favoritos*/
 let favoritos = []
 let recuperostorage = localStorage.getItem('favoritos_series')
@@ -97,4 +102,14 @@ favorito.addEventListener('click', function (e) {
     }
     let favstostring = JSON.stringify(favoritos);
     localStorage.setItem('favoritos_series', favstostring)
+})
+
+/*VER RECOMENDACIONES*/
+let ver_recomendaciones = false;
+
+recomendaciones.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (ver_recomendaciones) {
+        u
+    }
 })

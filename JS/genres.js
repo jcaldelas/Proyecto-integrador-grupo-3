@@ -7,8 +7,9 @@ fetch(urlUser)
     return response.json();
 })
 .then(function(data) {
-    
+
     let result = data.genres;
+    console.log(result)
     let characters = "";
 
     for (let i = 0; i < 5; i++) {

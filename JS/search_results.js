@@ -18,7 +18,7 @@ fetch(urlUser)
     if (result.length > 0) {
         let contenido = ''
         for (let i = 0; i < 5; i++) {
-            contenido += `<article class="cajahija"><a href="./detail-movie.html?id=${result[i].id}" class="letter">
+            contenido += `<article class="cajahija"><a href="./detail-movie.html?id=${result[i].id}&type=pelicula" class="letter">
                         <img class="imagen" src='https://image.tmdb.org/t/p/w500/${result[i].poster_path}' alt="" class="fotoscars"></a>
                         <h3 class="letter">${result[i].title || result[i].name}</h3>
                         <p class="letter">${result[i].release_date || result[i].first_air_date}</p>

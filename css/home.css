@@ -158,6 +158,13 @@ body {background-color: rgb(33, 33, 33);
     align-items: center;
     text-align: center;
 }
+#elrecomendaciones{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
 .centrar1_search{
     width: 100%;
     display: flex;

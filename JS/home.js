@@ -18,7 +18,7 @@ fetch(urlUserupcoming)
 
     for (let i = 0; i < 5; i++) {
         contenido += `<article class="cajahija"><a href="./detail-movie.html?id=${result[i].id}&type=pelicula" class="letter">
-                        <img class="imagen" src="https://image.tmdb.org/t/p/w500/${result[i].backdrop_path}" alt="">
+                        <img class="imagen" src="https://image.tmdb.org/t/p/w500/${result[i].poster_path}" alt="">
                         <h3 class="titulo_pelicula">${result[i].title}</h3>
                         <p class="fecha">${result[i].release_date}</p>
                         </a></article>`
@@ -47,7 +47,7 @@ fetch(urlUserpopular)
 
     for (let i = 0; i < 5; i++) {
         characters += `<article class="cajahija"><a href="./detail-movie.html?id=${result[i].id}&type=pelicula" class="letter">
-                        <img class="imagen" src="https://image.tmdb.org/t/p/w500/${result[i].backdrop_path}" alt="">
+                        <img class="imagen" src="https://image.tmdb.org/t/p/w500/${result[i].poster_path}" alt="">
                         <h3 class="titulo_pelicula">${result[i].title}</h3>
                         <p class="fecha">${result[i].release_date}</p>
                         </a></article>`
@@ -74,7 +74,7 @@ fetch(urlUsertoprated)
 
     for (let i = 0; i < 5; i++) {
         content += ` <article class="cajahija"><a href="./detail-movie.html?id=${result[i].id}&type=pelicula" class="letter">
-                      <img class= "imagen" src="https://image.tmdb.org/t/p/w500/${result[i].backdrop_path}" alt="">
+                      <img class= "imagen" src="https://image.tmdb.org/t/p/w500/${result[i].poster_path}" alt="">
                       <h3 class="titulo_pelicula">${result[i].title}</h3>
                       <p class="fecha">${result[i].release_date}</p>
                       </a></article>`
@@ -101,7 +101,7 @@ fetch(urlUserairing_today)
 
     for (let i = 0; i < 5; i++) {
         content += ` <article class="cajahija"><a href="./detail-serie.html?id=${result[i].id}&type=serie" class="letter">
-                      <img class= "imagen" src="https://image.tmdb.org/t/p/w500/${result[i].backdrop_path}" alt="">
+                      <img class= "imagen" src="https://image.tmdb.org/t/p/w500/${result[i].poster_path}" alt="">
                       <h3 class="titulo_pelicula">${result[i].name}</h3>
                       <p class="fecha">${result[i].first_air_date}</p>
                       </a></article>`
@@ -128,7 +128,7 @@ fetch(urlUserpopulartv)
 
     for (let i = 0; i < 5; i++) {
         content += ` <article class="cajahija"><a href="./detail-serie.html?id=${result[i].id}&type=serie" class="letter">
-                      <img class= "imagen" src="https://image.tmdb.org/t/p/w500/${result[i].backdrop_path}" alt="">
+                      <img class= "imagen" src="https://image.tmdb.org/t/p/w500/${result[i].poster_path}" alt="">
                       <h3 class="titulo_pelicula">${result[i].name}</h3>
                       <p class="fecha">${result[i].first_air_date}</p>
                       </a></article>`
@@ -156,7 +156,7 @@ fetch(urlUsertopratedtv)
 
     for (let i = 0; i < 5; i++) {
         content += `<article class="cajahija"><a href="./detail-serie.html?id=${result[i].id}&type=serie" class="letter">
-                     <img class= "imagen" src="https://image.tmdb.org/t/p/w500/${result[i].backdrop_path}" alt="">
+                     <img class= "imagen" src="https://image.tmdb.org/t/p/w500/${result[i].poster_path}" alt="">
                      <h3 class="titulo_pelicula">${result[i].name}</h3>
                      <p class="fecha">${result[i].first_air_date}</p>
                      </a></article> `

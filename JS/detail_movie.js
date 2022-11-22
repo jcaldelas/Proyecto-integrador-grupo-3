@@ -5,6 +5,7 @@ let type = qsobj.get('type')
 let favorito = document.querySelector('#clickfav')
 let urlUserupcoming = 'https://api.themoviedb.org/3/movie/upcoming?api_key=cf7707fd77a1290e2423ba7e39e253a8&language=en-US&page=1'
 let urlUserdetallepelis = `https://api.themoviedb.org/3/movie/${idpelicula}?api_key=cf7707fd77a1290e2423ba7e39e253a8&language=en-US`
+let urlver_movie =`https://api.themoviedb.org/3/movie/${idpelicula}/recommendations?api_key=cf7707fd77a1290e2423ba7e39e253a8&language=en-US&page=1`
 let maindetailmovie = document.querySelector('#centrar1Sin')
 let titulo_h3 = document.querySelector('#titulo1')
 let titulo_h32 = document.querySelector('#titulo2')
@@ -16,13 +17,13 @@ let duracion = document.querySelector('#duracion')
 let sinopsis = document.querySelector('#sinopsis')
 let generos = document.querySelector('#generos')
 let ul = document.querySelector('#ul')
-let link_genero = document.querySelector('.link_genero')
 let main_movies = document.querySelector('#main_pelis')
+let recomendaciones = document.querySelector('#ver_recomendaciones')
+let ulrecomendaciones = document.querySelector('#ulrecomendaciones')
 
 
 
 if (type == null || idpelicula == null) {
-    let contenido =''
     fetch(urlUserupcoming)
     .then(function(response) {
         return response.json();
@@ -35,7 +36,7 @@ if (type == null || idpelicula == null) {
 
         for (let i = 0; i < 5; i++) {
             contenido += `<article class="cajahija"><a href="./detail-movie.html?id=${result[i].id}&type=pelicula" class="letter">
-                            <img class="imagen" src="https://image.tmdb.org/t/p/w500/${result[i].backdrop_path}" alt="">
+                            <img class="imagen" src="https://image.tmdb.org/t/p/w500/${result[i].poster_path}" alt="">
                             <h3 class="titulo_pelicula">${result[i].title}</h3>
                             <p class="fecha">${result[i].release_date}</p>
                             </a></article>`
@@ -73,7 +74,7 @@ else{
         let contenido = "";
         for (let i = 0; i < result.length; i++) {
             
-            contenido += `<li class="li"><a  href="./detail-genres.html?id=${result[i].id}&genre=${result[i].name}">${result[i].name}</a></li>`
+            contenido += `<li class="li"><a  href="./detail-genres.html?id=${result[i].id}&genre=${result[i].name}&type=${type}">${result[i].name}</a></li>`
         }
         ul.innerHTML=contenido
     
@@ -106,3 +107,41 @@ favorito.addEventListener('click', function (e) {
     localStorage.setItem('favoritos_movies', favstostring)
 })
 
+
+/*Ver recomendaciones*/
+fetch(urlver_movie)
+.then(function (response) {
+    return response.JSON()
+})
+.then(function (data) {
+    console.log(data)
+    let result = data.results;
+    let contenido = ''
+    for (let i = 0; i < 4; i++) {
+        contenido += `<article class="cajahija">
+                       <a href="./detail-serie.html?id=${result[i].id}&type=serie" class="letter">
+                       <img class= "imagen" src="https://image.tmdb.org/t/p/w500/${result[i].poster_path}" alt="">
+                       <h3 class="titulo_pelicula">${result[i].name}</h3>
+                       <p class="fecha">${result[i].first_air_date}</p>
+                       </a></article>`
+                    }
+    ulrecomendaciones.innerHTML = contenido
+})
+.catch(function (error) {
+    return error
+})
+
+let mostrar = false;
+recomendaciones.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    if (mostrar) {
+        ulrecomendaciones.style.display = 'none';
+        recomendaciones.innerText = 'VER RECOMENACIONES'
+        mostrar = false;
+    } else {
+        ulrecomendaciones.style.display = 'flex'
+        recomendaciones.innerText = 'OCULTAR RECOMENDACIONES'
+        mostrar = true;
+    }
+})
