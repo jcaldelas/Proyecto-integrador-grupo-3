@@ -91,6 +91,7 @@ nav {
     padding: 20px;
     border-radius: 30px;
     width: 200px;
+    text-align: center;
 }
 
 .listaimagenes {
@@ -341,6 +342,7 @@ nav {
     padding: 20px;
     border-radius: 30px;
     width: 200px;
+    text-align: center;
 }
 .cajahija-detailgeneros {
     align-items: baseline;

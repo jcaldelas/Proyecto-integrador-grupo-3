@@ -31,7 +31,6 @@ if (type == null || idpelicula == null) {
     .then(function(data) {
         
         let result = data.results;
-        console.log(result)
         let contenido = "";
 
         for (let i = 0; i < 5; i++) {
@@ -60,8 +59,6 @@ else{
     })
     .then(function(data) {
         let result = data.genres
-        console.log(result)
-        console.log(result[0].name)
         titulo_h3.innerText = data.title;
         titulo_h32.innerText = data.title;
         titulo_h33.innerText = `MOVIE: ${data.title}`;
@@ -110,26 +107,31 @@ favorito.addEventListener('click', function (e) {
 
 /*Ver recomendaciones*/
 fetch(urlver_movie)
-.then(function (response) {
-    return response.JSON()
+.then(function(response) {
+    return response.json();
 })
-.then(function (data) {
+.then(function(data) {
     console.log(data)
     let result = data.results;
-    let contenido = ''
+    let contenido = "";
+
     for (let i = 0; i < 4; i++) {
-        contenido += `<article class="cajahija">
-                       <a href="./detail-serie.html?id=${result[i].id}&type=serie" class="letter">
-                       <img class= "imagen" src="https://image.tmdb.org/t/p/w500/${result[i].poster_path}" alt="">
-                       <h3 class="titulo_pelicula">${result[i].name}</h3>
-                       <p class="fecha">${result[i].first_air_date}</p>
-                       </a></article>`
-                    }
-    ulrecomendaciones.innerHTML = contenido
+        contenido += `<article class="cajahija"><a href="./detail-movie.html?id=${result[i].id}&type=pelicula" class="letter">
+                        <img class="imagen" src="https://image.tmdb.org/t/p/w500/${result[i].poster_path}" alt="">
+                        <h3 class="titulo_pelicula">${result[i].title}</h3>
+                        <p class="fecha">${result[i].release_date}</p>
+                        </a></article>`
+    }
+
+    ulrecomendaciones.innerHTML = contenido;
+
+
+  
+    return data;
 })
-.catch(function (error) {
-    return error
-})
+.catch(function(error) {
+    return error;
+});
 
 let mostrar = false;
 recomendaciones.addEventListener('click', function (e) {
